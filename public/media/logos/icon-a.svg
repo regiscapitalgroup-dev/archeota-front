@@ -1,0 +1,8 @@
+<svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Fondo circular -->
+  <circle cx="16" cy="16" r="15" fill="white" stroke="black" stroke-width="1.5"/>
+  
+  <!-- Icono representando elemento arqueológico/microbiano -->
+  <path d="M8 14 Q16 2 24 14 M10 20 Q16 8 22 20 M12 26 Q16 14 20 26" stroke="black" stroke-width="1.5" fill="none"/>
+  <circle cx="16" cy="8" r="2.5" fill="black"/>
+</svg>

@@ -67,36 +67,19 @@ export function Registration() {
       {/* begin::Heading */}
       <div className='mb-10 text-center'>
         {/* begin::Title */}
-        <h1 className='text-dark mb-3'>Request Membership</h1>
+        <h1 className='text-dark mb-3'>Sign Up</h1>
         {/* end::Title */}
 
         {/* begin::Link */}
-        <div className='text-gray-400 fw-bold fs-4'>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        {/* <div className='text-gray-400 fw-bold fs-4'> */}
+         {/*  Lorem ipsum dolor sit amet, consectetur adipiscing elit. */}
           {/* <Link to='/auth/login' className='link-primary fw-bolder' style={{marginLeft: '5px'}}>
             Forgot Password ?
           </Link> */}
-        </div>
+       {/*  </div> */}
         {/* end::Link */}
       </div>
       {/* end::Heading */}
-
-      {/* begin::Action 
-      <button type='button' className='btn btn-light-primary fw-bolder w-100 mb-10'>
-        <img
-          alt='Logo'
-          src={toAbsoluteUrl('/media/svg/brand-logos/google-icon.svg')}
-          className='h-20px me-3'
-        />
-        Sign in with Google
-      </button>
-       end::Action */}
-
-      {/*<div className='d-flex align-items-center mb-10'>
-        <div className='border-bottom border-gray-300 mw-50 w-100'></div>
-        <span className='fw-bold text-gray-400 fs-7 mx-2'>OR</span>
-        <div className='border-bottom border-gray-300 mw-50 w-100'></div>
-      </div>*/}
 
       {formik.status && (
         <div className='mb-lg-15 alert alert-danger'>
@@ -106,56 +89,55 @@ export function Registration() {
 
       {/* begin::Form group Firstname */}
       <div className='row fv-row mb-7'>
-        <div className='col-xl-6'>
-          <label className='class="form-label fw-bolder text-dark fs-6'>First name</label>
-          <input
-            placeholder='First name'
-            type='text'
-            autoComplete='off'
-            {...formik.getFieldProps('firstname')}
-            className={clsx(
-              'form-control form-control-lg form-control-solid',
-              {
-                'is-invalid': formik.touched.firstname && formik.errors.firstname,
-              },
-              {
-                'is-valid': formik.touched.firstname && !formik.errors.firstname,
-              }
-            )}
-          />
-          {formik.touched.firstname && formik.errors.firstname && (
-            <div className='fv-plugins-message-container'>
-              <div className='fv-help-block'>
-                <span role='alert'>{formik.errors.firstname}</span>
-              </div>
-            </div>
+        <label className='class="form-label fw-bolder text-dark fs-6'>First name</label>
+        <input
+          placeholder='First name'
+          type='text'
+          autoComplete='off'
+          {...formik.getFieldProps('firstname')}
+          className={clsx(
+            'form-control form-control-lg form-control-solid',
+            {
+              'is-invalid': formik.touched.firstname && formik.errors.firstname,
+            },
+            {
+              'is-valid': formik.touched.firstname && !formik.errors.firstname,
+            }
           )}
-        </div>
-        <div className='col-xl-6'>
-          <label className='class="form-label fw-bolder text-dark fs-6'>Last name</label>
-          <input
-            placeholder='Last name'
-            type='text'
-            autoComplete='off'
-            {...formik.getFieldProps('lastname')}
-            className={clsx(
-              'form-control form-control-lg form-control-solid',
-              {
-                'is-invalid': formik.touched.lastname && formik.errors.lastname,
-              },
-              {
-                'is-valid': formik.touched.lastname && !formik.errors.lastname,
-              }
-            )}
-          />
-          {formik.touched.lastname && formik.errors.lastname && (
-            <div className='fv-plugins-message-container'>
-              <div className='fv-help-block'>
-                <span role='alert'>{formik.errors.lastname}</span>
-              </div>
+        />
+        {formik.touched.firstname && formik.errors.firstname && (
+          <div className='fv-plugins-message-container'>
+            <div className='fv-help-block'>
+              <span role='alert'>{formik.errors.firstname}</span>
             </div>
+          </div>
+        )}
+      </div>
+
+      <div className='fv-row mb-7'>
+        <label className='class="form-label fw-bolder text-dark fs-6'>Last name</label>
+        <input
+          placeholder='Last name'
+          type='text'
+          autoComplete='off'
+          {...formik.getFieldProps('lastname')}
+          className={clsx(
+            'form-control form-control-lg form-control-solid',
+            {
+              'is-invalid': formik.touched.lastname && formik.errors.lastname,
+            },
+            {
+              'is-valid': formik.touched.lastname && !formik.errors.lastname,
+            }
           )}
-        </div>
+        />
+        {formik.touched.lastname && formik.errors.lastname && (
+          <div className='fv-plugins-message-container'>
+            <div className='fv-help-block'>
+              <span role='alert'>{formik.errors.lastname}</span>
+            </div>
+          </div>
+        )}
       </div>
       {/* end::Form group */}
 
@@ -186,7 +168,7 @@ export function Registration() {
       {/* end::Form group */}
 
       {/* begin::Form group Password */}
-      <div className='mb-10 fv-row'>
+     {/*  <div className='mb-10 fv-row'>
         <div className='mb-1'>
           <label className='form-label fw-bolder text-dark fs-6'>Phone number</label>
           <div className='position-relative mb-3'>
@@ -214,22 +196,10 @@ export function Registration() {
             )}
           </div>
         </div>
-      </div>
+      </div> */}
       {/* end::Form group */}
 
-      <div className='fv-row mb-10'>
-        <label className='form-label fw-bolder text-dark fs-6 mb-4'>Which best describes you</label>
-        <span className='form-check form-check-custom form-check-solid mb-4'>
-          <input className='form-check-input' type='radio' name='category' value='1' />
-          <div className='ms-2'>First choice</div>
-        </span>
-        <span className='form-check form-check-custom form-check-solid '>
-          <input className='form-check-input' type='radio' name='category' value='1' />
-          <div className='ms-2'>Second choice</div>
-        </span>
-      </div>
-
-    
+      
 
       {/* begin::Form group */}
       <div className='fv-row mb-10'>

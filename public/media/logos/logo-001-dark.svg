@@ -1,0 +1,11 @@
+<svg width="300%" height="200%" viewBox="0 0 269 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Fondo circular para el icono -->
+  <circle cx="25" cy="28" r="20" fill="white" stroke="black" stroke-width="2"/>
+  
+  <!-- Icono representando un elemento arqueológico/microbiano -->
+  <path d="M15 24 Q25 8 35 24 M18 32 Q25 16 32 32 M21 40 Q25 24 29 40" stroke="black" stroke-width="2" fill="none"/>
+  <circle cx="25" cy="18" r="3" fill="black"/>
+  
+  <!-- Texto "archeota" -->
+  <text x="55" y="36" font-family="Arial, sans-serif" font-size="50" font-weight="bold" fill="black">archeota</text>
+</svg>
